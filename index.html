@@ -8,104 +8,126 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #0f1220;
+      background: radial-gradient(circle at top, #15193a 0%, #0f1220 55%);
       color: #eaeaf0;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .container {
       max-width: 1000px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     header {
       text-align: center;
-      margin-bottom: 70px;
+      margin-bottom: 90px;
     }
 
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
     }
 
     header p {
       font-size: 1.1rem;
-      opacity: 0.85;
+      opacity: 0.8;
     }
 
     /* Navigation buttons */
     nav {
-      margin-top: 30px;
+      margin-top: 35px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     nav a {
-      background: #ffffff;
+      background: rgba(255,255,255,0.95);
       color: #0f1220;
-      padding: 8px 14px;
+      padding: 9px 16px;
       border-radius: 999px;
       font-size: 0.85rem;
       text-decoration: none;
       font-weight: 600;
-      transition: background 0.2s ease, transform 0.1s ease;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     }
 
     nav a:hover {
-      background: #dfe3ff;
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
     }
 
     section {
-      margin-bottom: 90px;
+      margin-bottom: 110px;
+      position: relative;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #3a3f6b, transparent);
     }
 
     section h2 {
-      font-size: 1.9rem;
-      border-bottom: 2px solid #3a3f6b;
-      padding-bottom: 8px;
-      margin-bottom: 25px;
+      font-size: 2rem;
+      margin-bottom: 18px;
     }
 
-    img {
-      width: 100%;
+    section p {
+      max-width: 760px;
+    }
+
+    /* Visual accent block instead of stock images */
+    .accent {
+      margin: 28px 0 10px 0;
+      padding: 22px 26px;
       border-radius: 14px;
-      margin: 20px 0;
+      background: linear-gradient(135deg, #1e2357, #171a3f);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), 0 8px 28px rgba(0,0,0,0.35);
+      font-size: 0.95rem;
+      opacity: 0.9;
     }
 
     iframe {
       width: 100%;
       height: 520px;
       border: none;
-      margin-top: 20px;
-      border-radius: 8px;
+      margin-top: 28px;
+      border-radius: 10px;
       background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45);
     }
 
     footer {
       text-align: center;
-      opacity: 0.65;
+      opacity: 0.6;
       font-size: 0.85rem;
-      margin-top: 120px;
+      margin-top: 140px;
     }
 
     .back-top {
-      margin-top: 30px;
+      margin-top: 40px;
       display: inline-block;
-      background: #ffffff;
+      background: rgba(255,255,255,0.95);
       color: #0f1220;
-      padding: 6px 12px;
+      padding: 7px 14px;
       border-radius: 999px;
       font-size: 0.8rem;
       text-decoration: none;
       font-weight: 600;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     }
 
     .back-top:hover {
-      background: #dfe3ff;
+      transform: translateY(-1px);
     }
   </style>
 </head>
@@ -134,7 +156,11 @@
         development as a writer and my ability to adapt to different assignments
         and audiences.
       </p>
-      <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a" alt="Writing workspace" />
+      <div class="accent">
+        This portfolio is organized as a single body of work, emphasizing
+        progression, argumentation, and revision across multiple genres rather
+        than isolated assignments.
+      </div>
     </section>
 
     <section id="freewriting">
@@ -145,6 +171,10 @@
         A lipogram is a work written without using a specific letter, and the
         omitted letter directly affects the difficulty of the piece.
       </p>
+      <div class="accent">
+        Constraint-based writing encouraged deliberate word choice and highlighted
+        how limitation can function as a creative tool rather than an obstacle.
+      </div>
       <iframe src="https://docs.google.com/document/d/1OYdQuNTZN5CNuBJRbpE7hoY0Oxha5IXtMuqaaHF6yHw/preview"></iframe>
     </section>
 
@@ -155,7 +185,10 @@
         masculinity" and evaluated them through the lenses of ethos, logos, and
         pathos to assess their persuasive effectiveness.
       </p>
-      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Text analysis" />
+      <div class="accent">
+        This analysis focused on how credibility, emotional appeal, and logical
+        structure interact to shape audience reception and belief.
+      </div>
       <iframe src="https://docs.google.com/document/d/1QE2B4whYekfVOdE7ZKMzytt7mq0JJ5L8/preview"></iframe>
     </section>
 
@@ -166,7 +199,10 @@
         argument. I focused on evaluating source credibility and integrating
         evidence smoothly rather than relying on summary alone.
       </p>
-      <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" alt="Research notes" />
+      <div class="accent">
+        Emphasis was placed on synthesis rather than aggregation, prioritizing
+        analytical depth over quantity of sources.
+      </div>
       <iframe src="https://docs.google.com/document/d/1K7w4AS5g_CzoSNHwyIWSVA8xn3YYly4b/preview"></iframe>
     </section>
 
@@ -182,13 +218,16 @@
     <section id="debate">
       <h2>Argumentative Writing – Debate Case</h2>
       <p>
-        This piece represents argumentative writing produced for competitive debate.
-        Although written for oral delivery, the case relies on the same core skills
-        emphasized in academic writing: claim construction, evidence selection,
-        rhetorical strategy, and audience awareness. The format required precision
-        and efficiency in language.
+        This piece represents argumentative writing produced for competitive
+        debate. Although written for oral delivery, the case relies on the same
+        core skills emphasized in academic writing: claim construction, evidence
+        selection, rhetorical strategy, and audience awareness.
       </p>
-      <iframe src="https://docs.google.com/document/d/17BE1JW7Q3uQVjWmT64DMX-2WfVPIMo6zIRJ0EmaDIy8/preview"></iframe>
+      <div class="accent">
+        The debate format imposed strict constraints on clarity and efficiency,
+        reinforcing the importance of precision in argumentative writing.
+      </div>
+      <iframe src="https://docs.google.com/document/d/1bsoStn7Bwg-h8mKnjUheHQaAlt3admCQ/preview"></iframe>
     </section>
 
     <section id="narrative">
@@ -209,4 +248,3 @@
   </div>
 </body>
 </html>
-
