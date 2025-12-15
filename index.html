@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asher | English Portfolio</title>
+  <title>Asher Wright | English Portfolio</title>
   <style>
     body {
       margin: 0;
@@ -12,58 +12,100 @@
       color: #eaeaf0;
       line-height: 1.6;
     }
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 40px 20px;
     }
+
     header {
       text-align: center;
       margin-bottom: 70px;
     }
+
     header h1 {
       font-size: 2.8rem;
       margin-bottom: 10px;
     }
+
     header p {
       font-size: 1.1rem;
       opacity: 0.85;
     }
+
+    /* Navigation buttons */
     nav {
       margin-top: 30px;
-      font-size: 0.95rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
+
     nav a {
-      color: #8fa0ff;
-      margin: 0 6px;
+      background: #ffffff;
+      color: #0f1220;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
       text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.1s ease;
     }
-    nav a:hover { text-decoration: underline; }
+
+    nav a:hover {
+      background: #dfe3ff;
+      transform: translateY(-1px);
+    }
+
     section {
-      margin-bottom: 80px;
+      margin-bottom: 90px;
     }
+
     section h2 {
       font-size: 1.9rem;
       border-bottom: 2px solid #3a3f6b;
       padding-bottom: 8px;
       margin-bottom: 25px;
     }
+
     img {
       width: 100%;
       border-radius: 14px;
       margin: 20px 0;
     }
+
     iframe {
       width: 100%;
       height: 520px;
       border: none;
       margin-top: 20px;
+      border-radius: 8px;
+      background: #ffffff;
     }
+
     footer {
       text-align: center;
       opacity: 0.65;
       font-size: 0.85rem;
-      margin-top: 100px;
+      margin-top: 120px;
+    }
+
+    .back-top {
+      margin-top: 30px;
+      display: inline-block;
+      background: #ffffff;
+      color: #0f1220;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back-top:hover {
+      background: #dfe3ff;
     }
   </style>
 </head>
@@ -71,14 +113,15 @@
   <div class="container">
 
     <header id="top">
-      <h1>Asher</h1>
+      <h1>Asher Wright</h1>
       <p>English Portfolio • Fall Semester</p>
       <nav>
-        <a href="#about">About Me</a> ·
-        <a href="#freewriting">Freewriting</a> ·
-        <a href="#rhetorical">Rhetorical Analysis</a> ·
-        <a href="#research">Research Essay</a> ·
-        <a href="#reflection">Reflection Essay</a> ·
+        <a href="#about">About</a>
+        <a href="#freewriting">Freewriting</a>
+        <a href="#rhetorical">Rhetorical Analysis</a>
+        <a href="#research">Research Essay</a>
+        <a href="#reflection">Reflection Essay</a>
+        <a href="#debate">Argumentative Writing</a>
         <a href="#narrative">Personal Narrative</a>
       </nav>
     </header>
@@ -86,11 +129,10 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        This portfolio contains a selection of my writing from this semester in
-        English. The pieces included represent different styles and purposes,
-        including analytical, research-based, and personal writing. Together,
-        they show my development as a writer and my ability to adapt to different
-        assignments and audiences.
+        The pieces included represent different styles and purposes, including
+        analytical, research-based, and personal writing. Together, they show my
+        development as a writer and my ability to adapt to different assignments
+        and audiences.
       </p>
       <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a" alt="Writing workspace" />
     </section>
@@ -98,10 +140,10 @@
     <section id="freewriting">
       <h2>Freewriting – Lipogram</h2>
       <p>
-        This freewriting assignment challenged me to work within strict linguistic
-        constraints. Writing a lipogram forced me to be more conscious of word choice
-        and sentence construction, revealing how limitations can encourage creativity
-        rather than restrict it.
+        I chose to write a lipogram for my freewriting assignment. The modern revival
+        of lipograms can be attributed to Ernest Vincent Wright and Georges Perec.
+        A lipogram is a work written without using a specific letter, and the
+        omitted letter directly affects the difficulty of the piece.
       </p>
       <iframe src="https://docs.google.com/document/d/1OYdQuNTZN5CNuBJRbpE7hoY0Oxha5IXtMuqaaHF6yHw/preview"></iframe>
     </section>
@@ -109,9 +151,9 @@
     <section id="rhetorical">
       <h2>Rhetorical Analysis</h2>
       <p>
-        In this essay, I analyze how rhetorical strategies are used to persuade a
-        specific audience. The assignment emphasized close reading, structural
-        awareness, and the relationship between language and intent.
+        For my rhetorical analysis, I examined claims surrounding "positive
+        masculinity" and evaluated them through the lenses of ethos, logos, and
+        pathos to assess their persuasive effectiveness.
       </p>
       <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Text analysis" />
       <iframe src="https://docs.google.com/document/d/1QE2B4whYekfVOdE7ZKMzytt7mq0JJ5L8/preview"></iframe>
@@ -121,8 +163,8 @@
       <h2>Research Essay</h2>
       <p>
         This research essay required synthesizing multiple sources into a cohesive
-        argument. I focused on evaluating source credibility and integrating evidence
-        smoothly rather than relying on summary alone.
+        argument. I focused on evaluating source credibility and integrating
+        evidence smoothly rather than relying on summary alone.
       </p>
       <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" alt="Research notes" />
       <iframe src="https://docs.google.com/document/d/1K7w4AS5g_CzoSNHwyIWSVA8xn3YYly4b/preview"></iframe>
@@ -137,6 +179,18 @@
       <iframe src="https://docs.google.com/document/d/1ZKAITaOpXi1hwcTRdS6pCYWei7Kflli10GHr6KPW6So/preview"></iframe>
     </section>
 
+    <section id="debate">
+      <h2>Argumentative Writing – Debate Case</h2>
+      <p>
+        This piece represents argumentative writing produced for competitive debate.
+        Although written for oral delivery, the case relies on the same core skills
+        emphasized in academic writing: claim construction, evidence selection,
+        rhetorical strategy, and audience awareness. The format required precision
+        and efficiency in language.
+      </p>
+      <iframe src="https://docs.google.com/document/d/17BE1JW7Q3uQVjWmT64DMX-2WfVPIMo6zIRJ0EmaDIy8/preview"></iframe>
+    </section>
+
     <section id="narrative">
       <h2>Personal Narrative</h2>
       <p>
@@ -145,13 +199,14 @@
         honesty.
       </p>
       <iframe src="https://docs.google.com/document/d/1P2QAZw0AW_oTg1FNKdZSwH_KbCgaHuCA/preview"></iframe>
-      <p><a href="#top">Back to top ↑</a></p>
+      <a class="back-top" href="#top">Back to top ↑</a>
     </section>
 
     <footer>
-      © 2025 Asher — English Portfolio
+      © 2025 Asher Wright — English Portfolio
     </footer>
 
   </div>
 </body>
 </html>
+
